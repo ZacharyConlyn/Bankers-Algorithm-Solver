@@ -4,7 +4,7 @@
 // Class: CMSC 412
 
 /******************************************************
- *    Banker.java: Takes a text file listing current  *
+ *    Banker.java: Takes a text file listing total    *
  *                 resources and a list of processes  *
  *                 as input, either as a command line *
  *                 option or with the file name input *
