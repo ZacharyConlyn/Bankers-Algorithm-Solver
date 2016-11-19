@@ -24,7 +24,7 @@ class Banker {
 
 	public static void main(String[] args) {
 		String fileToUse;
-		
+		// get the file name for input, either from args[] or prompt		
 		if (args.length == 0) { // no string entered as command line option
 			Scanner inType = new Scanner(System.in);
 			System.out.printf("Enter name of file: ");
@@ -41,14 +41,16 @@ class Banker {
 		} catch (FileNotFoundException e) {
 			System.out.println(e);
 		}
-		
+	
+		// prepare to read file
 		Scanner inFile = new Scanner(f);
 		String s; // will be used for a single line of the text file
 	 	int[] resourceArray = new int[MAX_RESOURCES]; // total resources
 		int currentResource = 0; // resources at start
 		Process[] processArray = new Process[MAX_PROCESSES];
 		int processNo = 0;
-		
+	
+		// read the file and parse the data
 		while (inFile.hasNextLine()) {
 			s = inFile.nextLine();
 			if ((s.length() > 0) && (s.charAt(0) == 'R')) { // is a resource line
@@ -85,7 +87,7 @@ class Banker {
 		}
 		System.out.println();*/
 
-		// create an array with current resources
+		// calculate starting resources
 		int[] currentResourceArray = resourceArray.clone();		
 		for (int i = 0; i < processNo; i++) {
 			int[] pa = processArray[i].getHeldResources();
@@ -101,7 +103,7 @@ class Banker {
 		}
 		System.out.println();*/
 		
-		// package the data into ArrayLists for the recursion algo
+		// package the data into ArrayLists for the recursion algorithm
 		ArrayList<Process> processList = new ArrayList<Process>(); 
 		ArrayList<Process> hist = new ArrayList<Process>(); 
 		for (int i = 0; i < processNo; i++) {
