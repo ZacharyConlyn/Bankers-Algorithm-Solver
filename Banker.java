@@ -121,11 +121,11 @@ class Banker {
 			System.out.println("No solutions found.");
 		} else {
 			long totalTime = endTime - startTime;
-			if (totalTime < 1000) {
-				System.out.println(Integer.toString(totalSolutions) + " solutions found in " + Long.toString(totalTime) + " milliseconds.");
+			if ((totalTime < 1000)) {
+				System.out.println(Integer.toString(totalSolutions) + " solution" +(totalSolutions > 1 ? "s": "") + " found in " + Long.toString(totalTime) + " milliseconds.");
 			} else {
 				double totalTimeInSeconds = (double) totalTime / 1000;
-				System.out.println(Integer.toString(totalSolutions) + " solutions found in " + Double.toString(totalTimeInSeconds) + " seconds.");
+				System.out.println(Integer.toString(totalSolutions) + " solution" +(totalSolutions > 1 ? "s": "") + " found in " + Double.toString(totalTimeInSeconds) + " seconds.");
 			}
 		}	
 	}
