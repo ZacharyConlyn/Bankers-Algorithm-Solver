@@ -1,4 +1,4 @@
-Test file 2 for banker's algorithm application
+Test file t2
 
 R1: 100
 R2: 100
