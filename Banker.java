@@ -1,3 +1,18 @@
+// file name: Banker.java
+// Author: Zachary Conlyn
+// Date: November 18 2016
+// Class: CMSC 412
+
+/******************************************************
+ *    Banker.java: Takes a text file listing current  *
+ *                 resources and a list of processes  *
+ *                 as input, either as a command line *
+ *                 option or with the file name input *
+ *                 by the user. Calculates and prints *
+ *                 all possible safe executions using *
+ *                 the banker's algorithm.            *
+ ******************************************************/
+
 import java.util.Scanner;
 import java.io.*;
 import java.util.ArrayList;

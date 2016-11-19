@@ -1,3 +1,14 @@
+// file name: Process.java
+// Author: Zachary Conlyn
+// Date: November 18 2016
+// Class: CMSC 412
+
+/******************************************************
+ *    Process.java: Models a process's current and    *
+ *                  max resources to solve the        *
+ *                  banker's algorithm                *
+ ******************************************************/
+
 class Process {
 	int processNumber;
 	int resources;
