@@ -18,7 +18,7 @@ The input file should be written in this format:
 
 The first lines starting with "R[digit]:" represent the total available resources of the system.
 
-The "P[digit]:" lines have two sequences of digits. The first sequence represents currently allocated resources from R1 to Rn. The second sequence represents max resources that could be requested.
+The "P[digit]:" lines have two sequences of digits. The first sequence represents currently allocated resources from R1 to Rn. The second sequence represents max resources that could be requested. Any character that are not digits will be ignored. Feel free to use commas, brackets or any other character to make visualizing the two sequences easier.
 
 The program ignores any lines that don't start with "P" or "R". You can write comments at the ends of lines or on separate lines. "R[digit]:" and "P[digit]:" must be the first characters on any line you wish the program to use.
 
